@@ -121,7 +121,7 @@ def test_ui_video(browser: WebDriver) -> None:
 @pytest.mark.ui
 def test_ui_groups(browser: WebDriver) -> None:
     base_url: str = os.getenv("UI_BASE_URL")
-    message: str = "Хоккей России"
+    message: str = os.getenv("GROUPS_NAME")
 
     # Селекторы
     groups_xpath: str = os.getenv("GROUPS_XPATH_SELECTOR")

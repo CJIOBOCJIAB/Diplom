@@ -97,25 +97,26 @@
 #### Скопируйте .env.example в .env.
 
  - Поиск app_id и access_token:
-   * 
-          1.) Зайдите в свой аккаунт в VK
-          2.) Выдите из аккаунта (на страницу аутентификации)
-          3.) Откройте devtools(F12)
-          4.) Очистите Network log
-          5.) Нажмите войти в аккаунт
-          6.) Из запросов ( {!}?act=connect_auth_saved_users ) и ( {!}?act=web_token ).
+   * Зайдите в свой аккаунт в VK
+   * Выдите из аккаунта (на страницу аутентификации)
+   * Откройте devtools(F12)
+   * Очистите Network log
+   * Нажмите войти в аккаунт
+   * Из запросов ( {!}?act=connect_auth_saved_users ) и ( {!}?act=web_token ).
           Fetch/XHR — Payload — From Data — app_id  и access_token (копируем значения).
+   
 
 - Перед запуском заполните необходимые значения:
 
   * 
           .env
-          CLIENT_ID=ваш_app_id
-          NAME=имя_и_фамилия_пользователя
-          CHAT_NAME=название_чата
-          ACCESS_TOKEN=ваш_access_token
-          FRIEND_NUM=номер_друга_в_списке
-          UI_BASE_URL=https://vk.com/профиль_пользователя
+          - CLIENT_ID=ваш_app_id
+          - NAME=имя_и_фамилия_пользователя
+          - CHAT_NAME=название_чата
+          - ACCESS_TOKEN=ваш_access_token
+          - FRIEND_NUM=номер_друга_в_списке(на странице "Друзья")
+          - UI_BASE_URL=https://vk.com/профиль_пользователя
+          - GROUPS_NAME=наименование группы
 
 ## Команды для запуска тестов
 ##### Все тесты (UI + API)
