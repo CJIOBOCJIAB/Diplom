@@ -117,7 +117,6 @@ class UiVkPage:
             max_attempts: int = 3,
             by: By = By.XPATH
     ) -> Optional[WebElement]:
-        # max_attempts = max_attempts
         """
         Надёжно вводит текст в поле с повторными
         попытками при StaleElementReferenceException.

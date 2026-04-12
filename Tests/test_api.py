@@ -109,7 +109,7 @@ def test_get_global_search_negative() -> None:
 @allure.feature("Поиск друзей")
 @allure.severity(allure.severity_level.CRITICAL)
 @pytest.mark.api
-def test_get_list_id_friend_search_() -> None:
+def test_get_list_id_friend_search() -> None:
     with allure.step("Чтение номера пользователя из .env (FRIEND_NUM)"):
         friend_num_str: str = os.getenv("FRIEND_NUM", "6")
         friend_num: int = int(friend_num_str)
@@ -217,7 +217,7 @@ def test_get_create_chat_friend() -> None:
         assert chat_id > 0, \
             "chat_id должен быть положительным числом"
 
-    with allure.step("Проверка корректности peer_ids (тип и непустота)"):
+    with allure.step("Проверка корректности peer_ids (тип и не пустота)"):
         assert isinstance(peer_ids_list, list), \
             "peer_ids должен быть списком"
         assert len(peer_ids_list) > 0, \
