@@ -210,6 +210,7 @@
 | **Всего** | **10** | **10 (100 %)** |
 
 Все тесты успешно пройдены.
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8c18dfac-5f53-418d-bf5b-9f366fdc6380" />
 
 ## Отчёты
  - После запуска тестов с Allure отчёт будет доступен по адресу: http://localhost:63342
